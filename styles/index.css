@@ -1,0 +1,247 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#Header{
+    background-color: transparent;
+    height: 5em;
+    width: 90%;
+    margin: 7px auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr 4fr;
+    column-gap: 12px;
+    align-items: center;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+}
+
+#logo-video{
+    width: 100%;
+    height: 3em;
+    display: block;
+    margin: auto;
+    border: 1px solid white;
+}
+
+#languages{
+    display: flex;
+    justify-items: flex-end;
+    align-items: space-evenly;
+    column-gap: 5px;
+    list-style: none;
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+.language{
+    float: left;
+    margin: 25px 5px auto 5px;
+    padding: 3px;
+    border: 1px solid transparent;
+}
+
+.language:hover{
+    transition: background-color, color, border 0.3s linear;
+    border: 1px solid rgba(15, 115, 158, 0.9);
+    color: cyan;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#navigator{
+    width: 90%;
+    height: 30px;
+    margin: 3px auto 12px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+}
+
+.nav-list{
+    background-color: rgba(97, 181, 255, 0.3);
+    color: rgba(177, 10, 166, 0.7);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.nav-list:hover{
+    cursor: pointer;
+    background-color: rgb(97, 181, 255);
+    color: rgba(177, 10, 166, 1);
+    border-color: rgb(105, 13, 13);
+    border-radius: 5px;
+    font-size: 23px;
+    transition-property: background-color, color, border-color, border-radius, font-size;
+    transition: 1s ease;
+    font-weight: bold;
+}
+
+#Main{
+    margin: 15px auto;
+    width: 90%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+}
+
+#Aside, #Section, #Article{
+    height: 95%;
+    width: 97%;
+    border: 1px solid cyan;
+    border-radius: 27px;
+    overflow: auto;
+}
+
+#Article{
+    background-color: lightskyblue;
+}
+
+#about-head{
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    background-color: rgb(16, 16, 225);
+    color: rgb(141, 128, 128);
+    font-weight: bolder;
+    letter-spacing: 0.25em;
+    border-radius: 50px;
+}
+
+.about-text{
+    text-indent: 1em;
+    font-size: 24px;
+    margin: 0;
+    padding: 3px;
+    color: rgb(80, 80, 235);
+    font-weight: 400;
+    padding: 0 12px;
+}
+
+#calculator-head{
+    font-size: 42px;
+    text-align: center;
+    margin: 0;
+    background-image: linear-gradient(180deg, purple 10%, darkblue 30%, blue 50%, cyan 80%, white 100%);
+    border-radius: 50px;
+    color: darkred;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 4px;
+}
+
+#calculator-text{
+    font-size: 25px;
+    text-indent: 1em;
+    font-weight: lighter;
+    margin: 0;
+    color: forestgreen;
+    padding: 0 12px;
+}
+
+#converter-head{
+    margin: 0;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 6px;
+    background-image: radial-gradient(circle at left, red 10%, orangered 30%, tomato 50%, orange 70%, brown 100%);
+    border-radius: 50px;
+    color: forestgreen;
+}
+
+#converter-text{
+    margin: 0;
+    padding: 0 12px;
+    font-weight: lighter;
+    color: cyan;
+    font-size: 27px;
+    text-indent: 1em;
+}
+
+
+.computer-OS-logo{
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+}
+
+.phone-store-logo{
+    width: 90%;
+    height: 40px;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+}
+
+#computer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+    height: 12em;
+}
+
+#phone{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5px;
+    height: 12em;
+}
+
+.softwareBtn{
+    width: 95%;
+    height: 39px;
+    border: 3px solid blue;
+    border-radius: 50px;
+    display: block;
+    margin: 12px auto;
+    padding: 2px;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 15px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    opacity: 60%;
+    cursor: not-allowed;
+}
+
+#download-head{
+    text-align: center;
+    font-size: 35px;
+    margin: 0 auto;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 0.21em;
+    border-radius: 50px;
+}

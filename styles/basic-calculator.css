@@ -1,0 +1,188 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#Header{
+    background-color: transparent;
+    height: 5em;
+    width: 90%;
+    margin: 7px auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr 4fr;
+    column-gap: 12px;
+    align-items: center;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+}
+
+#logo-video{
+    width: 100%;
+    height: 3em;
+    display: block;
+    margin: auto;
+    border: 1px solid white;
+}
+
+#languages{
+    display: flex;
+    justify-items: flex-end;
+    align-items: space-evenly;
+    column-gap: 5px;
+    list-style: none;
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+.language{
+    float: left;
+    margin: 25px 5px auto 5px;
+    padding: 3px;
+    border: 1px solid transparent;
+}
+
+.language:hover{
+    transition: background-color, color, border 0.3s linear;
+    border: 1px solid rgba(15, 115, 158, 0.9);
+    color: cyan;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#navigator{
+    width: 90%;
+    height: 30px;
+    margin: 3px auto 12px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+}
+
+.nav-list{
+    background-color: rgba(97, 181, 255, 0.3);
+    color: rgba(177, 10, 166, 0.7);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.nav-list:hover{
+    cursor: pointer;
+    background-color: rgb(97, 181, 255);
+    color: rgba(177, 10, 166, 1);
+    border-color: rgb(105, 13, 13);
+    border-radius: 5px;
+    font-size: 23px;
+    transition-property: background-color, color, border-color, border-radius, font-size;
+    transition: 1s ease;
+    font-weight: bold;
+}
+
+#calculator-head{
+    margin: 12px auto;
+    padding: 5px;
+    width: 90%;
+    font-family: Arial;
+    border-radius: 50px;
+    font-size: 2.5em;
+    color: lightpink;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+#Main{
+    margin: 15px auto;
+    width: 50%;
+    height: 100%;
+    background: darkgray;
+    color: white;
+    border: 2px solid cyan;
+    border-radius: 50px;
+    padding: 12px;
+    font-size: 2em;
+    font-family: "Verdana";
+}
+
+#text-area{
+    height: 3em;
+    width: 98%;
+    padding: 7px;
+    border: 3px solid forestgreen;
+    border-radius: 50px;
+    background-color: black;
+    margin: 5px auto;
+    overflow: auto;
+}
+
+#input-area{
+    padding-left: 12px;
+    text-align: left;
+    font-weight: lighter;
+    opacity: 80%;
+}
+
+#output-area{
+    padding-right: 12px;
+    text-align: right;
+    font-weight: border;
+}
+
+#keys-area{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    row-gap: 1em;
+    border: 3px solid transparent;
+    border-radius: 50px;
+}
+
+.keys,
+.operators,
+.numbers{
+    height: 100%;
+    width: 39%;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 3px;
+    text-align: center;
+}
+
+.keys:hover,
+.operators:hover,
+.numbers:hover{
+    border-color: gray;
+    background-color: gray;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: border-color, background-color 0.5s linear;
+}
+
+.keys{
+    color: cyan;
+}
+
+.operators{
+    color: red;
+}
+
+.numbers{
+    color: black;
+}
