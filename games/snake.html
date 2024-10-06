@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "icon" type = "image/png" href = "images/snake.png">
+        <link rel = "stylesheet" href = "styles/snake.css">
+        <title>snake</title>
+    </head>
+
+    <body>
+	<footer id = "titleContainer">
+	    <img src = "images/snake.png" alt = "this is an image about snake game" id = "titleImage">
+	    <h1 id = "titleText">SNAKE</h1>
+	</footer>
+
+	<hr>
+
+	<div id = "board">
+	    <div id = "scoreRecord">
+		<p class = "recorderText">name: </p>
+		<p class = "recorderText" id = "rankName"></p>
+		<br>
+		<p class = "recorderText">score: </p>
+		<p class = "recorderText" id = "rankScore"></p>
+		<br>
+		<p class = "recorderText">occupation percentage: </p>
+		<p class = "recorderText" id = "rankOccupationPercentage"></p>
+	    </div>
+
+	    <canvas id = "canvas" width = "375" height = "375" style = "background-color: skyblue; margin: auto; border: 1px groove white"></canvas>
+
+	    <div id = "controlsContainer">
+		<img src = "images/up.png" alt = "up symbol" class = "symbol" id = "upSb">
+		<div id = "leftRight">
+		    <img src = "images/left.png" alt = "left symbol" class = "symbol" id = "leftSb">
+		    <img src = "images/right.png" alt = "right symbol" class = "symbol" id = "rightSb">
+		</div>
+		<img src = "images/down.png" alt = "down symbol" class = "symbol" id = "downSb">
+	    </div>
+	</div>
+
+	<br>
+
+	<div id = "statusContainer">
+	    <p id = "score"></p>
+	    <p id = "occupation"></p>
+	    <button id = "resetBtn">reset</button>
+	</div>
+
+	<script src = "jss/snake.js"></script>
+    </body>
+</html>

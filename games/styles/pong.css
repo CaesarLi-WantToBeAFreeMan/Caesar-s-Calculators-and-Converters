@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#gameContainer{
+    border: 3px inset lightpink;
+    border-radius: 50px;
+    text-align: center;
+    margin: 3px;
+    padding: 12px;
+}
+
+#score{
+    background-color: forestgreen;
+    color: white;
+    border-radius: 50px;
+    font-family: "Courier New", cursive;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 12px auto 12px auto;
+    width: 270px;
+    height: 39px;
+}
+
+#billiard1Score{
+    color: red;
+}
+
+#billiard2Score{
+    color: blue;
+}
+
+#resetBtn{
+    border: 1px outset white;
+    background-color: blue;
+    color: red;
+    border-radius: 12px;
+    width: 120px;
+    height: 32px;
+    font-size: 27px;
+}
+
+#resetBtn:hover{
+   cursor: pointer;
+   background-color: red;
+   color: blue;
+   border-color: darkgray; 
+}

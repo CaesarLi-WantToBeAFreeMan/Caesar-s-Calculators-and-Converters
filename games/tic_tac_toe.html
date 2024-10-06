@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "icon" type = "image/png" href = "images/tic_tac_toe.png">
+        <link rel = "stylesheet" href = "styles/tic_tac_toe.css">
+        <title> TIC TAC TOE </title>
+    </head>
+
+    <body>
+	<h1 id = "title">TIC TAC TOE</h1>
+	<hr>
+	<div id = "model">
+	    <p id = "modelTip">please choose a mode to play</P>
+		<div class = "radioContainer">
+			<label for = "PvsP"><b>person VS person</b></label>
+			<input type = "radio" id = "PvsP" name = "model" class = "choice" checked>
+		</div>
+		<div class = "radioContainer">
+			<label for = "PvsC"><b>person VS computer</b></label>
+			<input type = "radio" id = "PvsC" name = "model" class = "choice">
+		</div>
+	</div>
+
+	<hr>
+
+	<div id = "gameContainer">
+	    <div id = "modeContainer">
+			<p id = "modeText"> model: <b><u id = "modeInfo"></u><b></p>
+			<button id = "replayBtn">replay</button>
+	    </div>
+	    <hr>
+
+	    <div id = "board">
+		<div class = "chess" cellIndex = "0"></div>
+		<div class = "chess" cellIndex = "1"></div>
+		<div class = "chess" cellIndex = "2"></div>
+		<div class = "chess" cellIndex = "3"></div>
+		<div class = "chess" cellIndex = "4"></div>
+		<div class = "chess" cellIndex = "5"></div>
+		<div class = "chess" cellIndex = "6"></div>
+		<div class = "chess" cellIndex = "7"></div>
+		<div class = "chess" cellIndex = "8"></div>
+	    </div>
+
+	    <hr>
+
+		<p id = "info">please enjoy our game</p>
+	</div>
+
+	<script src = "jss/tic_tac_toe.js"></script>
+    </body>
+</html>

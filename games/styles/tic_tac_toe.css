@@ -1,0 +1,115 @@
+@font-face{
+    src: url("fonts/Pacifico-Regular.ttf");
+    font-family: PR;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: PR;
+}
+
+#title{
+    background-color: deepskyblue;
+    color: lighttan;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    border-radius: 120px;
+    cursor: not-allowed;
+}
+
+#gameContainer{
+    margin: 0;
+    height: 350px;
+    border: 3px groove orange;
+    border-radius: 50px;
+}
+
+#board{
+    margin: 0 auto 0 auto;
+    width: 210px;
+    height: 215px;
+    border: 3px solid tan;
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    row-gap: 0;
+}
+
+.chess{
+    text-align: center;
+    vertical-align: center;
+    font-size: 65px;
+    height: 70px;
+    border: 1px outset tan;
+}
+
+#info{
+    font-size: 32px;
+    background-color: purple;
+    color: orange;
+    border-radius: 50px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 95%;
+    cursor: not-allowed;
+}
+
+#modeContainer{
+    height: 45px;
+}
+
+#modeText{
+    display: float;
+    float: left;
+    text-align: center;
+    width: 39%;
+    margin: 7px 0 3px 50px;
+    background-color: violet;
+    color: wheat;
+    font-size: 32px;
+    font-family: Verdena;
+    border: 1px wheat double;
+    border-radius: 50px;
+    cursor: not-allowed;
+}
+
+#replayBtn{
+    display: float;
+    float: right;
+    align-items: center;
+    font-size: 32px;
+    text-align: center;
+    background-color: purple;
+    color: orange;
+    border-radius: 50px;
+    margin: 7px 50px 3px 0;
+}
+
+#replayBtn:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: purple;
+}
+
+#model{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Courier New";
+    font-size: 32px;
+}
+
+#modelTip{
+    vertical-align: top;
+    margin: 0;
+    cursor: not-allowed;
+}
+
+.choice{
+    margin: 0 15px 0 15px;
+}
+
+.radioContainer{
+    display: inline-block;
+}
